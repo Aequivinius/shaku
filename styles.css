@@ -131,6 +131,10 @@ em {
 	color: #BF8E63;
 }
 
+em.dark {
+	color: #072620;
+}
+
 .hand {
 	font-family: 'Rock Salt';
 	text-transform: none;
