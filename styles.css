@@ -1,0 +1,364 @@
+/* colors
+=========
+turqoise: #072620;
+muddy-brown: #594827;
+Ocker: #BF8E63;
+camel: #A6785D;
+pink-gray: #BFADA8; */
+
+
+@import
+url('https://fonts.googleapis.com/css?family=Noto+Serif|Rock+Salt');
+
+* {
+	box-sizing: border-box;
+	margin: 0 0 0 0;
+	scroll-behavior: smooth;
+	font-family: 'Noto Serif', serif;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* typography
+============= */
+
+.logo {
+	color: #072620;
+	font-size: 3em;
+	font-weight: 500;
+	letter-spacing: .2em;
+}
+
+.hand {
+	font-family: 'Rock Salt';
+	text-transform: none;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-style: italic;
+	font-weight: 200;
+	left: 1em;
+	right: 1em;
+	margin: auto;
+}
+
+@media (max-width: 50rem) {
+	.title {
+		font-size: 1.5em;
+	}
+}
+
+
+.right {
+	float: right;
+}
+
+a {
+	color: inherit;
+	font-style: normal;
+	text-decoration: none;
+	border-bottom: 1px solid #072620;
+	padding-bottom: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 3px;
+}
+
+a:hover {
+	color: #072620;
+	border-color: #594827;
+}
+
+/* colors
+=========
+turqoise: #072620;
+muddy-brown: #594827;
+Ocker: #BF8E63;
+camel: #A6785D;
+pink-gray: #BFADA8; */
+p {
+	text-align: justify;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 3em;
+}
+
+p a, label a {
+	color: #072620;
+	border-color: #BF8E63;
+}
+
+p a:hover,
+p a:focus,
+label a:hover {
+	color: #BF8E63;
+	border-color: #072620;
+}
+
+.text-img {
+	height: .9em;
+}
+
+.noline {
+	border-bottom: 0px;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	letter-spacing: 0.2em;
+	color: #BF8E63;
+}
+
+.hand {
+	font-family: 'Rock Salt';
+	text-transform: none;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.indent {
+	text-indent: 1em;
+}
+
+
+@media (min-width: 50rem) {
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
+.filtered {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* navigation
+========= */
+
+nav ul {
+
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	padding-bottom: 0.5em;
+
+	display: inline-block;
+}
+
+nav a {
+	margin: 1em;
+	border: 0px;
+}
+
+@media (max-width: 50rem) {
+	nav {
+		display: none;
+	}
+}
+
+
+/* sections
+============ */
+
+.home {
+	background-color: #BF8E63;
+	color: #594827;
+	text-shadow: 1px 1px 1px #A6785D;
+	height: 80vh;
+	position: relative;
+	box-shadow:
+		inset 0px 10px 5px -10px #594827,
+		inset 0px -10px 5px -10px #594827;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+.contact {
+	padding-top: 5em;
+	padding-bottom: 1em;
+}
+
+/* todo
+======= */
+
+ul.todo {
+	margin: 3em;
+	font-size: 1.5em;
+	padding: 0;
+	font-style: italic;
+	list-style: none;
+}
+
+.todo li {
+	padding-bottom: 0.5em;
+	position: relative;
+}
+
+div.todo {
+	display: flex;
+	margin-left: 25px;
+	margin-right: 3em;
+	width: 100%;
+	height: 1em;
+
+}
+
+.dots {
+	display: block;
+	background: radial-gradient(circle, rgba(0,0,0,.62) 1px, transparent 1px) repeat-x;
+	background-size: 10px 1.5em;
+	flex-grow: 10;
+}
+
+label {
+	height: 1em;
+}
+
+.cost {
+	font-style: normal;
+	font-family: 'Rock Salt';
+	font-size: 0.6em;
+	padding-right: 1.8em;
+}
+
+input[type='checkbox'] {
+	height: 1em;
+	position: absolute;
+	left: 10px;
+	top: 11px;
+}
+
+input[type=checkbox]:checked + .todo {
+	text-decoration: line-through;
+}
+
+@media (max-width: 50rem) {
+	.dots {
+		display: none;
+	}
+
+	.cost {
+		background: red;
+
+		display: none;
+	}
+
+	label {
+		text-align: left;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.5em;
+		padding-right: 0.5em;
+	}
+
+
+}
+
+
+
+/* aspects
+============ */
+
+.aspects {
+	padding: 0;
+	margin: 0 1em 1em 1em;
+	position: relative;
+}
+
+figure {
+	position: relative;
+	margin: 0 0 1em 0;
+	padding-top: 1em;
+	width: 100%;
+}
+
+figure img {
+	display: block;
+	cursor: pointer;
+}
+
+figcaption {
+	font-size: 0.5em;
+	position: absolute;
+	bottom: 2em;
+	color: #072620;
+	z-index: 100;
+	text-transform: uppercase;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight: 500;
+	letter-spacing: 1.5em;
+	display: none;
+	cursor: pointer;
+}
+
+figure:hover figcaption {
+	display: block;
+}
+
+@media (min-width: 50rem) {
+
+	figure {
+		display: inline-block;
+		width: 30% !important;
+		margin: 1.5% 1.5% 1.5% 1.5%;
+	}
+}
+
+.contact {
+	background-color: #072620;
+	color: #BFADA8;
+}
+
+.collapsed {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	z-index: 150;
+	overflow-y: scroll;
+	background-color: rgba(255, 255, 255,0.95);
+}
+
+
+
+.collapsed:target {
+	display: block;
+}
+
+
+
+/* colors
+=========
+
+turqoise: #072620;
+muddy-brown: #594827;
+Ocker: #BF8E63;
+camel: #A6785D;
+pink-gray: #BFADA8;
+
+*/
