@@ -53,9 +53,12 @@ img {
 	}
 }
 
-
 .right {
 	float: right;
+}
+
+.centered {
+	text-align: center;
 }
 
 a {
@@ -99,6 +102,16 @@ p a:focus,
 label a:hover {
 	color: #BF8E63;
 	border-color: #072620;
+}
+
+.contact a {
+	color: #BF8E63;
+	border-color: #BFADA8
+}
+
+.contact a:hover {
+	color: #BFADA8;
+	border-color: #BF8E63;
 }
 
 .text-img {
@@ -270,8 +283,6 @@ input[type=checkbox]:checked + .todo {
 		height: 1.5em;
 		padding-right: 0.5em;
 	}
-
-
 }
 
 
@@ -344,10 +355,21 @@ figure:hover figcaption {
 	background-color: rgba(255, 255, 255,0.95);
 }
 
-
-
 .collapsed:target {
 	display: block;
+}
+
+.contact .collapsed {
+	position: relative;
+	background: none;
+}
+
+.collapser:target .collapsed {
+	display: inline;
+}
+
+.collapser:target .collapsing {
+	display: none;
 }
 
 
